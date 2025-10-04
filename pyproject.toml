@@ -1,0 +1,12 @@
+﻿[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="container-vuln-scanner"
+version="0.1.0"
+description="Lightweight Docker image vulnerability scanner with Dockerfile checks"
+authors=[{name="Adit Sharma"}]
+readme="README.md"
+requires-python=">=3.9"
+dependencies=["requests>=2.32.0","docker>=7.0.0"]
