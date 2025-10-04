@@ -141,9 +141,11 @@ GitHub Actions / GitLab CI (CI/CD integration)
 Please see SECURITY.md.
 If you find a security vulnerability, please report it responsibly.
 
-🤝 Contributing
-We love contributions! Please read CONTRIBUTING.md for style guidelines and workflow.
+## 📜 License
+Copyright © 2025 Adit Sharma.  
+All rights reserved.
 
-📜 License
-MIT License © Adit Sharma. See LICENSE.
+This project and its source code are proprietary and confidential.  
+Unauthorized copying, modification, distribution, or use of this software, via any medium, is strictly prohibited without prior written permission from the author.
+
 
