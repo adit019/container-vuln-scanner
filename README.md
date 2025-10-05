@@ -151,9 +151,7 @@ GitHub Actions / GitLab CI (CI/CD integration)
  OVAL feed enrichment (RedHat, Alpine secdb)
 
  REST API server (FastAPI) for integration with dashboards
- 
 ---
-
  Security Policy
 Please see SECURITY.md.
 If you find a security vulnerability, please report it responsibly.
