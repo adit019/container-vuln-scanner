@@ -6,26 +6,26 @@
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
 
 **Container Image Vulnerability Scanner** is a lightweight **Python + Docker** security tool that:
-- 🔍 Scans container images for known CVEs using the **OSV.dev vulnerability database**.
-- 📝 Analyzes Dockerfiles for insecure patterns and **CIS Docker Benchmark** issues.
-- 🚦 Integrates with **CI/CD pipelines** to block vulnerable builds before deployment.
+-  Scans container images for known CVEs using the **OSV.dev vulnerability database**.
+-  Analyzes Dockerfiles for insecure patterns and **CIS Docker Benchmark** issues.
+-  Integrates with **CI/CD pipelines** to block vulnerable builds before deployment.
 
 ---
 
-## ✨ Why This Project?
+##  Why This Project?
 
 Modern development cycles demand **speed + security**.
 - Traditional scanners are **slow**, **resource-heavy**, or locked behind enterprise paywalls.
 - Security checks often run **after deployment**, instead of at build time.
 
-👉 This project is built for **developers first**:
+ This project is built for **developers first**:
 - Runs **in seconds**, not minutes.
 - Works **locally and in CI/CD**.
 - Easy to extend (Python modules, simple regex-based Dockerfile checks).
 
 ---
 
-## 🖥️ Example Scan Results
+##  Example Scan Results
 
 ### 🔴 Build Failed (High Vulnerabilities Detected)
 ![Build Failed Scan Output](assets/build_failed.png)
@@ -37,7 +37,7 @@ _These examples show automated CI/CD responses based on vulnerability severity._
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 `	ext
    +-------------------+
@@ -54,7 +54,7 @@ _These examples show automated CI/CD responses based on vulnerability severity._
              |
              v
    [ Policy Engine ] ---> Pass/Fail ---> CI/CD Pipeline
-🚀 Getting Started
+ Getting Started
 Prerequisites
 Python 3.9+
 
@@ -70,7 +70,7 @@ cd container-vuln-scanner
 python -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-⚡ Usage
+ Usage
 1) Scan a Docker Image
 bash
 Copy code
@@ -79,7 +79,7 @@ python scanner/cve_scanner.py --image ubuntu:22.04 --fail-on HIGH
 bash
 Copy code
 python scanner/dockerfile_parser.py --file ./Dockerfile
-🔄 CI/CD Integration
+ CI/CD Integration
 GitHub Actions
 yaml
 Copy code
@@ -104,7 +104,7 @@ vulnerability_scan:
   script:
     - pip install -r requirements.txt
     - python scanner/cve_scanner.py --image my-app:latest --fail-on HIGH
-📊 Example Output
+ Example Output
 bash
 Copy code
 [INFO] Detected package manager: dpkg
@@ -123,11 +123,12 @@ FlagDescription
 --jsonOutput results in JSON for machine integration (coming soon)
 --ignoreIgnore specific CVEs (coming soon)
 
-🧪 Testing
+ Testing
 bash
 Copy code
 pytest -q
-🧰 Tech Stack
+
+ Tech Stack
 Python (CLI, rules engine)
 
 Docker CLI (container inspection)
@@ -138,7 +139,7 @@ PyTest (tests)
 
 GitHub Actions / GitLab CI (CI/CD integration)
 
-📈 Roadmap
+ Roadmap
  JSON output for dashboards
 
  Ignore list for specific CVEs
@@ -149,11 +150,11 @@ GitHub Actions / GitLab CI (CI/CD integration)
 
  REST API server (FastAPI) for integration with dashboards
 
-🔒 Security Policy
+ Security Policy
 Please see SECURITY.md.
 If you find a security vulnerability, please report it responsibly.
 
-## 📜 License
+##  License
 Copyright © 2025 Adit Sharma.  
 All rights reserved.
 
