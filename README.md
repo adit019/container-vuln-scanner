@@ -139,6 +139,8 @@ PyTest (tests)
 
 GitHub Actions / GitLab CI (CI/CD integration)
 
+---
+
  Roadmap
  JSON output for dashboards
 
@@ -149,6 +151,8 @@ GitHub Actions / GitLab CI (CI/CD integration)
  OVAL feed enrichment (RedHat, Alpine secdb)
 
  REST API server (FastAPI) for integration with dashboards
+ 
+---
 
  Security Policy
 Please see SECURITY.md.
