@@ -28,10 +28,10 @@ Modern development cycles demand **speed + security**.
 ##  Example Scan Results
 
 ### 🔴 Build Failed (High Vulnerabilities Detected)
-![Build Failed Scan Output](assets/build_failed.png)
+![Build Failed Scan Output](assets/build_failed.png.png)
 
 ### 🟢 Build Passed (All Checks Cleared)
-![Build Passed Scan Output](assets/build_passed.png)
+![Build Passed Scan Output](assets/build_passed.png.png)
 
 _These examples show automated CI/CD responses based on vulnerability severity._
 
